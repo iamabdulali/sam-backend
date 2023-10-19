@@ -65,6 +65,10 @@ app.post("/submit", (req, res) => {
   console.log(mailOptions, "MAILLLLL AFTERRR");
 });
 
+app.get('/', (req,res) =>{
+  res.send("WORKING")
+})
+
 app.listen(port, function () {
   console.log(`Server running on http://localhost:${port}`);
 });
